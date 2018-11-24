@@ -1,0 +1,225 @@
+.form_wizard_steps{
+    height: 130px;
+    background-color: #e1dede
+}
+.form_wizard_steps_item{
+    border-right: #a6a6a6 1px solid;
+    padding: 2px;
+    padding-top: 10px;
+    text-align: center
+}
+.form_wizard_steps_item > img{
+    width: 38px;
+    height: 38px;
+    display: block;
+    margin: auto;
+    margin-bottom: 5px
+}
+.form_wizard_steps_item_en_cour{
+    background-color: blue;
+    color: white;
+    text-align: center
+}
+.form_wizard_steps_item_valid{
+    background-color: green;
+    color: #023102
+}
+.form_wizard_steps_item > .desc em{
+    font-size: 8px;
+    font-weight: bold
+}
+.form_wizard_steps_item > .status{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100px;
+    border: blue 2px solid;
+    left: 65px;
+    top: 100px;
+    color: blue;
+    text-align: center;
+    font-size: 23px;
+    padding-top: 4px                             
+}
+.form_wizard_steps_item > .status_valid{
+    position: absolute;
+    left: 65px;
+    top: 100px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    display: none
+}
+.form_wizard_steps_item > .status_valid img{
+    width: 100%;
+    height: 100%;
+}
+.form_wizard_steps_item_disable > .desc em{
+    color: #636363
+}
+.form_wizard_content{
+    margin-top: 50px
+}
+.form_wizard_content_header img{
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-right: 5px
+}
+.form_wizard_content_header strong{
+    color: blue
+}
+.form_wizard_content_header em{
+    color: #636363;
+    font-weight: bold
+}
+.form_wizard_content_header > div:last-child{
+    text-align: right;
+    color: #505050;
+    font-weight: bold
+}
+.form_wizard_content_form{
+    background-color: #f2f7f9;
+    border: #d0ecf8 1px solid;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.form_wizard_content_form form{
+    padding-top: 20px
+}
+.form_wizard_content_form form .form-control{
+    height: 50px
+}
+.form_wizard_content_form form label{
+    color: #505050;
+    font-weight: bold
+}
+.form_wizard_content_footer{
+    margin-top: 70px;
+    margin-bottom: 70px
+}
+.form_wizard_content_footer > div{
+    width: 100%;
+    height: 48px;
+    background-image: linear-gradient(to bottom,#01b6f9,#0061b2);
+    border-radius: 4px;
+    border: #0061b2 1px solid;
+    padding: 0px;
+    cursor: pointer
+}
+.form_wizard_content_footer > div div{
+    width: 50px;
+    border-right: white 1px solid;
+    height: 100%;
+    padding-top: 10px
+}
+.form_wizard_content_footer > div div img{
+    width: 25px;
+}
+.form_wizard_content_footer > div div{
+    height: 100%;
+    border-right: white 1px solid
+}
+.form_wizard_content_footer > div div img{
+    width: 25px;
+    height: 25px;
+    margin-left: 15px
+}
+.form-control{
+    box-shadow: #b1acac 2px 2px 4px
+}
+.form_item_info{
+    width: 240px;
+    background-color: #26324b;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    color: #83aaff;
+    font-weight: bold;
+    text-align: left;
+    display: none;
+}
+.form_item_info img{
+    width: 25px;
+    height: 35px;
+    position: absolute;
+    right: 96%;
+    top: 10px
+}
+.form_item_info p{
+    font-size: 12px
+}
+.form_wizard_steps_mobile{
+    background-color: #e1dede;
+    height: 67px;
+    padding: 5px;
+}
+.form_wizard_steps_mobile_activ{
+    background-color: green;
+    border-radius: 100px;
+    padding: 0px;
+}
+.form_wizard_steps_mobile_activ_img{
+    width: 100%;
+    height: 100%
+}
+.form_wizard_steps_mobile_disable_img{
+    width: 32px;
+    height: 32px;
+    display: block;
+    margin: auto
+}
+.form_wizard_steps_mobile_disable{
+    background-color: white;
+    border-radius: 100px;
+    padding: 0px;
+    padding-top: 10px
+}
+.form_wizard_steps_mobile_en_cour{
+    background-color: blue;
+    border-radius: 100px;
+    padding: 0px;
+    padding-top: 10px
+}
+@media(min-width: 900px){
+    .form_wizard_content_form > div{
+        padding-left: 10px
+    }
+    .form_wizard_steps_mobile{
+        display: none
+    }
+    .form_item_info{
+        position: absolute;
+        top: 30px;
+        left: 100%;
+        z-index: 5000
+    }
+}          
+@media(max-width: 900px){
+    .form_item_info > img{
+        display: none
+    }
+    .form_wizard_steps_item + .form_wizard_steps_item{
+        display: none
+    }
+    .form_wizard > div{
+        padding: 0px
+    }
+    .form_wizard_steps{
+        background-color: transparent
+    }
+    .form_wizard_steps_item > .status{
+        left: 40%;
+        display: block
+    }
+    .form_wizard_steps_item{
+        background-color: blue;
+        color: white;
+        text-align: center
+    }
+    .form_wizard_steps_item > .desc em{
+        font-size: 15px;
+        color: white
+    }
+}
